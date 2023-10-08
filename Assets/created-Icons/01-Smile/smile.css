@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(47, 45, 45);
+}
+
+/*! Task-01 Smile */
+
+.smile{
+    width: 200px;
+    height: 200px;
+    background-color: #FFCC33;
+    border-radius: 50%;
+    position: absolute;
+    left: 300px;
+    top: 200px;
+}
+.smile::before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-color: rgb(47, 45, 45);
+    position: absolute;
+    border-radius: 50%;
+    top: 50px;
+    left: 50px;
+    box-shadow: 75px 0px rgb(47, 45, 45);
+
+}
+.smile::after{
+    content: '';
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+    top: 50px;
+    left: 50px;
+    border-bottom: solid 10px ;
+    border-top:solid transparent;
+    border-left:solid transparent;
+    border-right:solid transparent;
+}
+
+/*! Task-02 sad */
+
+.sad{
+    width: 200px;
+    height: 200px;
+    background-color: #FFCC33;
+    position: absolute;
+    top: 200px;
+    left: 600px;
+    border-radius: 50%;
+}
+.sad::before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-color: currentColor;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    box-shadow: 75px 0px;
+    border-radius: 50%;
+}
+.sad::after{
+    content: '';
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+    top: 120px;
+    left: 50px;
+    border-top: solid 10px ;
+    border-bottom:solid transparent;
+    border-left:solid transparent;
+    border-right:solid transparent;
+}
+
+/*! Task-03 Laugh */
+
+.laugh{
+    width: 200px;
+    height: 200px;
+    background-color: #FFCC33;
+    position: absolute;
+    top: 200px;
+    left: 900px;
+    border-radius: 50%;
+}
+.laugh::before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-color: currentColor;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    box-shadow: 75px 0px;
+    border-radius: 50%;
+}
+.laugh::after{
+    content: '';
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    top: 110px;
+    left: 42px;
+    border: 10px solid;
+    border-radius:0 0 60px 60px;
+    
+}

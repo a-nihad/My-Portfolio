@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.out-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: coral;
+    border-radius: 10px;
+}
+.card{
+    width: 600px;
+    height: max-content;
+    border: 1px solid gray;
+    background-color: white;
+    display: flex;
+    gap: 30px;
+    border-radius: 10px 10px 0 0;
+    border: none;
+}
+span{
+    font-weight: 100;
+    color: gray;
+}
+img{
+    width: 190px;
+    border-radius: 10px;
+}
+.card{
+    display: flex;
+    padding: 30px 40px;
+}
+
+.left-sec{
+    display: flex;
+}
+.left-row, .right-row{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.left-row{
+    font-weight: 500;
+}
+h1{
+    color:  rgb(0, 197, 98);
+}
+hr{
+    margin: 10px 0;
+    border-top: 2px solid  rgb(0, 197, 98);
+}
+
+.text-sec{
+    display: flex;
+    gap: 25px;
+}
+
+
+.footer{
+    height: 70px;
+    width: 600px;
+    background-color: rgb(0, 197, 98);
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 10px 10px;
+    border: none;
+}
+.icone{
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+.icone:hover{
+    color: blue;
+}
+
+/* ********************************************** */
+
+.inp-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    border-radius: 10px;
+}
+.inp-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.inp, .btn{
+    padding: 8px;
+    border: 1px solid orange;
+    border-radius: 8px;
+}
+.dob-sec{
+    background-color: white;
+    padding: 2px 10px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border: 1px solid orange;
+    border-radius: 8px;
+}
+.pic-sec{
+    display: flex;
+    gap: 20px;
+    border-radius: 8px;
+}
+.pic{
+    background-color: white;
+}
+.btn{
+    background-color: orange;
+    color: white;
+    font-weight: 600;
+}
+.btn:hover{
+    background-color: orangered;
+}
+.com{
+    text-transform: capitalize;
+}
+.name::before{
+    content: " I'm " ;
+    color: gray;
+    font-weight: 100;
+}

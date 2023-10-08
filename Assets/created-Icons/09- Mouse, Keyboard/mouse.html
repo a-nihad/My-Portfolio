@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: antiquewhite;
+        }
+        .mouse{
+            position: absolute;
+            top: 250px;
+            left: 600px;
+            width: 100px;
+            height: 100px;
+            color: black;
+            background-color: currentColor;
+            border-radius: 0 0 40px 40px;
+        }
+        .mouse::before{
+            content: '';
+            position: absolute;
+            top: -52px;
+            width: 47px;
+            height: 47px;
+            background-color: currentColor;
+            border-radius: 100% 0 0px 0px;
+        }
+        .mouse::after{
+            content: '';
+            position: absolute;
+            top: -52px;
+            right: 0;
+            width: 47px;
+            height: 47px;
+            background-color: currentColor;
+            border-radius: 0 100% 0px 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="mouse"></div>
+</body>
+</html>

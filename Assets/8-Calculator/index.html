@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="/Assets/8-Calculator/css/style.css">
+</head>
+<body>
+    <div id="container">
+        <div class="display-section">
+            <h1 id="iput"></h1>
+            <h1 id="oput"></h1>
+        </div>
+        <div class="btn-section">
+            <div class="row">
+                <button class="btn" onclick="clearBtn()">C</button>
+                <button class="btn" onclick="percent()"><i class="fa-solid fa-percent"></i></button>
+                <button class="btn" onclick="backBtn()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9.75L14.25 12m0 0l2.25 2.25M14.25 12l2.25-2.25M14.25 12L12 14.25m-2.58 4.92l-6.375-6.375a1.125 1.125 0 010-1.59L9.42 4.83c.211-.211.498-.33.796-.33H19.5a2.25 2.25 0 012.25 2.25v10.5a2.25 2.25 0 01-2.25 2.25h-9.284c-.298 0-.585-.119-.796-.33z" />
+                      </svg>                      
+                </button>
+                <button class="btn" onclick="display('÷')"><i class="fa-solid fa-divide"></i></button>
+            </div>
+            <div class="row">
+                <button class="btn" onclick="display('7')">7</button>
+                <button class="btn" onclick="display('8')">8</button>
+                <button class="btn" onclick="display('9')">9</button>
+                <button class="btn" onclick="display('x')"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="row">
+                <button class="btn" onclick="display('4')">4</button>
+                <button class="btn" onclick="display('5')">5</button>
+                <button class="btn" onclick="display('6')">6</button>
+                <button class="btn" onclick="display('-')"><i class="fa-solid fa-minus"></i></button>
+            </div>
+            <div class="row">
+                <button class="btn" onclick="display('1')">1</button>
+                <button class="btn" onclick="display('2')">2</button>
+                <button class="btn" onclick="display('3')">3</button>
+                <button class="btn" onclick="display('+')"><i class="fa-solid fa-plus"></i></button>
+            </div>
+            <div class="row">
+                <button class="btn zero" onclick="display('0')">0</button>
+                <button class="btn dot" onclick="display('.')">.</button>
+                <button class="btn" onclick="calculate()"><i class="fa-solid fa-equals"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/57d725acdf.js" crossorigin="anonymous"></script>
+    <script src="./js/script.js" ></script>
+    
+</body>
+</html>

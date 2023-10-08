@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: antiquewhite;
+        }
+        .keyboard{
+            position: absolute;
+            top: 250px;
+            left: 600px;
+            width: 220px;
+            height: 140px;
+            border: 10px solid;
+            border-radius: 10px;
+        }
+        .keyboard::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 20px;
+            margin: auto;
+            width: 15px;
+            height: 15px;
+            border-radius: 3px;
+            /* color: black; */
+            background-color: currentColor;
+            box-shadow: 50px 0px currentColor,
+            -50px 0px currentColor,
+            75px 30px currentColor,
+            -75px 30px currentColor,
+            25px 30px currentColor,
+            -25px 30px currentColor,
+            -50px 60px currentColor,
+            50px 60px currentColor,
+            0px 60px currentColor;
+        }
+        .keyboard::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            bottom: 10px;
+            width: 120px;
+            height: 15px;
+            background-color: currentColor;
+        }
+    </style>
+</head>
+<body>
+    <div class="keyboard"></div>
+</body>
+</html>

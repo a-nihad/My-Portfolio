@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+.twitter{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(0,178,239);
+    border-radius: 20px;
+}
+/* .twitter::before{
+    content: '';
+    position: absolute;
+    top: 109px;
+    left: 67px;
+    width: 180px;
+    height: 50px;
+    border-bottom: 58px solid currentColor;
+    border-radius: 50%;
+    transform: rotate(-39deg);
+    z-index: 10;
+} */
+.body{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 200px;
+    height: 50px;
+    /* background-color: antiquewhite; */
+    border-bottom: 75px solid;
+    border-radius: 0 0px 50% 50%;
+    transform: rotate(-42deg);
+}
+.body::before{
+    content: '';
+    position: absolute;
+    top: 19px;
+    left: -4px;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(0,178,239);
+    border-bottom: 18px solid rgb(0,178,239);
+    border-radius: 0 0 0 100%;
+    transform: rotate(-11deg);
+}
+.head{
+    position: absolute;
+    top: 77px;
+    left: 155px;
+    width: 80px;
+    height: 80px;
+    background-color: currentColor;
+    border-radius: 50% 50% 33% 50%;
+}
+.head::before{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 71px;
+    width: 25px;
+    height: 9px;
+    /* background-color: gray; */
+    border-bottom: 10px solid currentColor;
+    border-radius: 0 0 60% 0;
+    transform: rotate(-15deg);
+}
+.head::after{
+    content: '';
+    position: absolute;
+    top: 19px;
+    left: 67px;
+    border-bottom: 14px solid currentColor;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    transform: rotate(-30deg);
+}
+.feather{
+    position: absolute;
+    top: 164px;
+    left: 76px;
+    width: 100px;
+    height: 20px;
+    border-bottom: 30px solid currentColor;
+    border-radius: 0px 0 20px 36px;
+    transform: rotate(-6deg);
+}
+.feather::before{
+    content: '';
+    position: absolute;
+    top: -26px;
+    left: -18px;
+    width: 100px;
+    height: 20px;
+    border-bottom: 30px solid currentColor;
+    border-radius: 0px 0 20px 36px;
+    transform: rotate(24deg);
+}
+.cut{
+    position: absolute;
+    top: 110px;
+    left: 63px;
+    width: 142px;
+    height: 24px;
+    /* background-color: blueviolet; */
+    border-bottom: 45px solid currentColor;
+    border-radius: 0 0 40px 50px;
+    transform: rotate(23deg);
+}
+.cut::before{
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: 19px;
+    width: 80px;
+    height: 50px;
+    border-bottom: 33px solid currentColor;
+    border-radius: 50%;
+    transform: rotate(-14deg);
+}

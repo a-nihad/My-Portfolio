@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inp-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.inp, .btn{
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid gray;
+}
+.btn{
+    width: 150px;
+}

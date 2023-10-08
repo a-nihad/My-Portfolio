@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <style>
+        body{
+            background-color: darkseagreen;
+        }
+        .clock{
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            border-radius: 50%;
+            border: 10px solid darkslategray;
+        }
+        .cent{
+            width: 15px;
+            height: 15px;
+            background-color: darkslategray;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 50%;
+            z-index: 10;
+        }
+        .minute{
+            content: '';
+            position: absolute;
+            width: 3px;
+            height: 90px;
+            background-color: red;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 10px;
+            z-index: 3;
+            animation: time 10s infinite linear;
+            transform-origin: bottom;
+            border-radius: 50% 50% 0 0;
+        }
+        .second{
+            content: '';
+            position: absolute;
+            width: 6px;
+            height: 75px;
+            background-color: gray;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 25px;
+            animation: time 30s infinite linear;
+            transform-origin: bottom;
+            border-radius: 50% 50% 0 0;
+            z-index: 2;
+        }
+        .hours{
+            content: '';
+            position: absolute;
+            width: 9px;
+            height: 60px;
+            background-color: darkslategray;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 40px;
+            animation: time 60s infinite linear;
+            transform-origin: bottom;
+            border-radius: 50% 50% 0 0;
+        }
+
+        @keyframes time{
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="clock">
+        <div class="cent"></div>
+        <div class="minute"></div>
+        <div class="second"></div>
+        <div class="hours"></div>
+    </div>
+    
+</body>
+</html>

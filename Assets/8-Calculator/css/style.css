@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.display-section{
+    height: 100px;
+    background-color: lightgrey;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 20px;
+}
+.btn-section{
+    padding: 10px;
+    border: 5px solid lightgray;
+}
+#oput{
+    font-size: 40px;
+}
+.btn{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+    margin: 2px;
+    cursor: pointer;
+}
+.zero{
+    width: 130px;
+}
+.icon{
+    width: 20px;
+    padding: auto;
+}
+.dot{
+    font-weight: bold;
+}

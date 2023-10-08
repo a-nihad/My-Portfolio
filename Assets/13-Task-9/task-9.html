@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-9</title>
+
+    <style>
+
+        .cantainer{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .qoutes{
+            width: 300px;
+            height: max-content;
+            text-align: center;
+            padding: 20px;
+            background-color: aquamarine;
+            border-radius: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="cantainer">
+        <div class="qoutes">
+            <h2 class="text"></h2>
+            <hr>
+            <p class="person" ></p>
+        </div>
+    </div>
+
+    <script>
+        let arr = [{
+            qout : 'Someone is sitting in the shade today because someone planted a tree a long time ago.',
+            name: 'Warren Buffett'
+        },{
+            qout : `Oppertunities don't happed. You create them.`  ,
+            name : "Chris Grosser"
+        },{
+            qout : `Once you choose hope, anything's possible.`,
+            name : 'Christopher Reeve'
+        },{
+            qout : `Try not to become a person of success, but rather try to become a person of value.`,
+            name : 'Albert Einstein'
+        },{
+            qout : `Live as if you were to die tomorrow. Learn as if you were to live forever`,
+            name : 'Mahatma Gandhi' 
+        },{
+            qout : `Failure is another steppingstone to greatness.`,
+            name : 'Oprah Winfrey'
+        }]
+
+        const col = ['red','blue','orange','green','grey','purple']
+        let text = document.querySelector(".text")
+        let person = document.querySelector('.person')
+        let qoutes = document.querySelector(".qoutes")
+
+        qoutes.addEventListener('mouseenter',()=>{
+            // for (i in arr){
+            //     text.innerHTML = ` <q> <i> ${arr[i].qout} </i> </q> `
+            //     person.innerHTML = ` - ${arr[i].name} -` 
+            //     console.log(arr[i].name);
+            // }
+
+            let num = Math.floor(Math.random()*6)
+            text.innerHTML = ` <q> <i> ${arr[num].qout} </i> </q> `
+            person.innerHTML = ` - ${arr[num].name} -` 
+            qoutes.style.color = col[Math.floor(Math.random()*6)]
+        })
+
+    </script>
+    
+</body>
+</html>

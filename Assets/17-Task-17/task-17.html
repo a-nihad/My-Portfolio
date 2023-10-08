@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-17</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .btn{
+            padding: 20px 50px;
+            margin: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        h2{
+            padding: 10px;
+            border: 2px solid gray;
+            width: 380px;
+            height: 50px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h2 class="out"></h2>
+        <div class="btn-sec">
+            <button class="btn inc">Increment</button>
+            <button class="btn dec">Decrement</button>
+        </div>
+    </div>
+
+    <script>
+        let out = document.querySelector('.out')
+        let inc = document.querySelector('.inc')
+        let dec = document.querySelector('.dec')
+        let num = 0
+
+        inc.addEventListener('click',()=>{
+            out.innerText = ++num
+            if(out.innerText %5 ==0){
+                alert("BUS")
+            }
+        })
+        dec.addEventListener('click',()=>{
+            out.innerText = --num
+            if(out.innerText %5 == 0){
+                alert("BUS")
+            }
+        })
+
+
+    </script>
+</body>
+</html>

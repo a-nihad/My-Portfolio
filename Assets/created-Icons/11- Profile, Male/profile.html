@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        .profile{
+            position: absolute;
+            top: 250px;
+            left: 650px;
+            width: 100px;
+            height: 100px;
+            /* color: black; */
+            background-color: currentColor;
+            border-radius: 50%;
+        }
+        .profile:hover{
+            color: brown;
+        }
+        .profile::after{
+            content: '';
+            position: absolute;
+            top: 80px;
+            left: -50px;
+            width: 200px;
+            height: 130px;
+            /* color: black; */
+            background-color: currentColor;
+            border-radius:100px 100px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile"></div>
+</body>
+</html>

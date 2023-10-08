@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printer</title>
+    <style>
+        .printer{
+            position: absolute;
+            top: 250px;
+            left: 600px;
+            width: 200px;
+            height: 120px;
+            /* color: black; */
+            background-color: currentColor;
+            border-radius: 10px 10px 0 0;
+        } 
+        .printer:hover{
+            color: darkblue;
+        }
+        .printer::before{
+            content: '';
+            position: absolute;
+            right: 0px;
+            left: 0px;
+            top: -20px;
+            margin: auto;
+            width: 100px;
+            height: 40px;
+            border: 8px solid currentColor;
+        } 
+        .printer::after{
+            content: '';
+            position: absolute;
+            right: 0px;
+            left: 0px;
+            bottom: -50px;
+            margin: auto;
+            width: 100px;
+            height: 120px;
+            background-color: white;
+            border: 8px solid currentColor;
+        } 
+    </style>
+</head>
+<body>
+    <div class="printer"></div>
+</body>
+</html>

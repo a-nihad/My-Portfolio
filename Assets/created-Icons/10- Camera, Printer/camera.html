@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera</title>
+    <style>
+        .camera{
+            position: absolute;
+            top: 250px;
+            left: 600px;
+            width: 200px;
+            height: 140px;
+            /* color: black; */
+            background-color: currentColor;
+            border-radius: 10px;
+        }
+        .camera:hover{
+            color: darkblue;
+        }
+        .camera::before{
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 70px;
+            height: 70px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        .camera::after{
+            content: '';
+            position: absolute;
+            top: -12px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: currentColor;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="camera"></div>
+</body>
+</html>

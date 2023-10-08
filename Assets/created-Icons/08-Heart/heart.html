@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        .heart{
+            position: absolute;
+            top: 300px;
+            left: 600px;
+            width: 100px;
+            height: 100px;
+            /* color: black; */
+            background-color: currentColor;
+            transform: rotate(45deg);
+            animation: colors 3s linear infinite alternate;
+        }
+        .heart::after{
+            content: '';
+            position: absolute;
+            top: -98px;
+            left: -20px;
+            width: 120px;
+            height: 100px;
+            background-color: currentColor;
+            border-radius: 50% 50% 0 0 ;
+        }
+        .heart::before{
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -98px;
+            width: 120px;
+            height: 120px;
+            background-color: currentColor;
+            border-radius: 50% 0 0 50%;
+        }
+        @keyframes colors{
+            0%{
+                color: green;
+            }
+            50%{
+                color: yellow;
+            }
+            100%{
+                color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="heart"></div>
+</body>
+</html>

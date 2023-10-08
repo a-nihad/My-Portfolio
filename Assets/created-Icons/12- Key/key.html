@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key</title>
+    <style>
+        .key{
+            position: absolute;
+            top: 200px;
+            left: 650px;
+            width: 150px;
+            height: 150px;
+            color: black;
+            background-color: currentColor;
+            border-radius: 50%;
+        }
+        .key::before{
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 200px;
+            bottom: -150px;
+            left: -30px;
+            background-color: currentColor;
+            transform: rotate(40deg);
+        }
+        .key::after{
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 10px;
+            bottom: -100px;
+            left: -60px;
+            background-color: currentColor;
+            transform: rotate(40deg);
+            box-shadow: 0px 20px currentColor;
+        }
+    </style>
+</head>
+<body>
+    <div class="key"></div>
+</body>
+</html>

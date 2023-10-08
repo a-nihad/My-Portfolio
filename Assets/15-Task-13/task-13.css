@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: max-content;
+    background-color: antiquewhite;
+    margin: 30px;
+}
+.inp-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+}
+.inp{
+    padding: 8px;
+}
+.subject{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+.btn{
+    width: 180px;
+    padding: 8px;
+    cursor: pointer;
+}
+.btn-sec{
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+}
+.inp , .btn{
+    border-radius: 8px;
+    border: 1px solid gray;
+}
+

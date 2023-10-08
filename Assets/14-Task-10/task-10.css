@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.container, .display{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+.card{
+    text-align: center;
+    padding: 10px;
+    border: 1px solid orange;
+    border-radius: 10px;
+    
+}
+.buy{
+    border: 1px solid red;
+}
+img{
+    width: 150px;
+}
+hr{
+    width: 80%;
+    margin: auto;
+    border-top: 1px solid red;
+}
+h2{
+    color: orange;
+}
+.order{
+    color: red;
+}
+.buy-img{
+    width: 100px;
+}
+.calorie::before{
+    content: 'Calorie :- ';
+}
+button{
+    padding: 8px;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: orange;
+    color: white;
+    font-size: medium;
+    font-weight: 500;
+}
+.sub-btn{
+    width: 90%;
+    background-color: red;
+    cursor: pointer;
+}
+.sub-btn:hover{
+    background-color: orange;
+}
+
+.main-container{
+    width: max-content;
+    padding: 20px;
+    text-align: center;
+}
+
+.total-sec{
+    border: 2px solid red;
+    background-color: antiquewhite;
+    width: max-content;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+}
+.total-sec h2{
+    color: brown;
+}
+.display-sec{
+    width: max-content;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+}

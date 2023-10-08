@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Keyboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="display-section">
+            <h1 id="display-col"></h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <button onclick="display('Q')">Q</button>
+                <button onclick="display('W')">W</button>
+                <button onclick="display('E')">E</button>
+                <button onclick="display('R')">R</button>
+                <button onclick="display('T')">T</button>
+                <button onclick="display('Y')">Y</button>
+                <button onclick="display('U')">U</button>
+                <button onclick="display('I')">I</button>
+                <button onclick="display('O')">O</button>
+                <button onclick="display('P')">P</button>
+            </div>
+            <div class="row">
+                <button onclick="display('A')">A</button>
+                <button onclick="display('S')">S</button>
+                <button onclick="display('D')">D</button>
+                <button onclick="display('F')">F</button>
+                <button onclick="display('G')">G</button>
+                <button onclick="display('H')">H</button>
+                <button onclick="display('J')">J</button>
+                <button onclick="display('K')">K</button>
+                <button onclick="display('L')">L</button>
+            </div>
+            <div class="row">
+                <button><i class="fa-regular fa-circle-up"></i></button>
+                <button onclick=" display('Z')">Z</button>
+                <button onclick=" display('X')">X</button>
+                <button onclick=" display('C')">C</button>
+                <button onclick=" display('V')">V</button>
+                <button onclick=" display('B')">B</button>
+                <button onclick=" display('N')">N</button>
+                <button onclick=" display('M')">M</button>
+                <button onclick=" backbtn()"><i class="fa-solid fa-delete-left"></i></button>
+            </div>
+            <div class="row">
+                <button id="num">123</button>
+                <button><i class="fa-regular fa-face-smile" onclick="imog()"></i></button>
+                <button><i class="fa-solid fa-microphone"></i></button>
+                <button id="space" onclick="forSpace()">Space</button>
+                <button id="ret" onclick="clears()">Clear</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/57d725acdf.js" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
